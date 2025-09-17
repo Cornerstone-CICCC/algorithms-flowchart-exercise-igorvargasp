@@ -1,15 +1,12 @@
+const handleStudentGrades = (marks) => {
+  if (marks >= 80) {
+    return "A";
+  } else if (marks >= 60) {
+    return "B";
+  } else if (marks >= 40) {
+    return "C";
+  }
+  return "No grade";
+};
 
-
-const handleStudentGrades = (grade) => {
-    if(grade >= 80) {
-        return "A"
-    }else if( grade >= 60) {
-        return "B"
-    }else if( grade >= 40) {
-        return "C"
-    }  
-    return "No grade"
-}
-
-
-console.log(handleStudentGrades(39))
+console.log(handleStudentGrades(39));
